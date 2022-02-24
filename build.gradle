@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.1.1' apply false
+    id 'com.android.library' version '7.1.1' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+defaultConfig {
+    applicationId "ru.aqsi.fclient"
+    minSdkVersion 21
+    targetSdkVersion 30
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    externalNativeBuild {
+        cmake {
+            cppFlags ""
+        }
+    }
+    ndk {
+        abiFilters "x86", "x86_64"
+    }
+}
+defaultConfig {
+    applicationId "ru.aqsi.fclient"
+    minSdkVersion 21
+    targetSdkVersion 30
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    externalNativeBuild {
+        cmake {
+            cppFlags ""
+        }
+    }
+    ndk {
+        abiFilters "x86", "x86_64"
+    }
+}
